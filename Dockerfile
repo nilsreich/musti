@@ -1,5 +1,12 @@
-FROM kstaken/apache2
-LABEL name "my-docker-deployment"
-COPY /my-app/* /var/www/
-EXPOSE 80
-CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
+FROM mhart/alpine-node:6.2.0
+
+LABEL name "now-dockerfile-example"
+
+RUN mkdir /app
+WORKDIR /app
+COPY package.json /my-app
+RUN npm install
+COPY index.js /my-app
+
+EXPOSE 3000
+CMD ["npm", "start"]
