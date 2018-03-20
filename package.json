@@ -1,0 +1,12 @@
+{
+    "name": "example",
+    "version": "0.0.1",
+    "devDependencies": {
+      "micro": "6.0.2"
+    },
+    "files": ["index.js"],
+    "scripts": {
+      "start": "micro -p 3000 ."
+    },
+    "main": "index.js"
+  }
