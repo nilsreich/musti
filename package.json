@@ -1,5 +1,5 @@
 {
-  "name": "realtime-chat",
+  "name": "musti",
   "scripts": {
     "start": "node index"
   },
