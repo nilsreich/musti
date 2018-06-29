@@ -1,7 +1,8 @@
 {
   "name": "musti",
   "scripts": {
-    "start": "node index",
+    "build": "babel src -d lib",
+    "start": "node index.html",
     "test": "mocha"
   },
   "files": [
@@ -18,7 +19,9 @@
   "directories": {
     "test": "test"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nilsreich/musti.git"
