@@ -2,25 +2,25 @@
   "name": "musti",
   "scripts": {
     "build": "babel src -d lib",
-    "start": "node index.html",
+    "start": "webpack --config webpack.config.js",
     "test": "mocha"
   },
-  "files": [
-    "main.js"
-  ],
   "dependencies": {
     "express": "latest",
+    "lit-html": "^0.10.2",
     "mocha": "^5.2.0",
     "socket.io": "^2.0.4"
   },
   "description": "[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/nilsreich/musti)",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.14.0"
   },
   "repository": {
     "type": "git",

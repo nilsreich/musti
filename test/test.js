@@ -1,6 +1,6 @@
 
 let assert = require('assert');
-import '../main.js';
+let main = require( '../lib/mathe.js');
 
 
 
@@ -9,7 +9,7 @@ import '../main.js';
 describe('Erster test', function() {
   describe('rechne', function(done) {
     it('Hier sollte nun die Zahl 8 erscheinen', function() {
-        assert.equal(8, square(4));
+        assert.equal(3.1415926, main.PI);
       });
   });
 
