@@ -1,3 +1,4 @@
+
 let assert = require('assert');
 import '../main.js';
 
