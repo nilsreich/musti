@@ -4,9 +4,29 @@
     "start": "node index",
     "test": "mocha"
   },
+  "files": [
+    "main.js"
+  ],
   "dependencies": {
     "express": "latest",
     "mocha": "^5.2.0",
     "socket.io": "^2.0.4"
-  }
+  },
+  "description": "[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/nilsreich/musti)",
+  "version": "1.0.0",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nilsreich/musti.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nilsreich/musti/issues"
+  },
+  "homepage": "https://github.com/nilsreich/musti#readme"
 }
