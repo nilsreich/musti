@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "lit-html": "^0.10.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.14.0"
   }
 }
