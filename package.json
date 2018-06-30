@@ -1,35 +1,29 @@
 {
-  "name": "musti",
-  "scripts": {
-    "build": "babel src -d lib",
-    "start": "webpack --config webpack.config.js",
-    "test": "mocha"
-  },
-  "dependencies": {
-    "express": "latest",
-    "lit-html": "^0.10.2",
-    "mocha": "^5.2.0",
-    "socket.io": "^2.0.4"
-  },
-  "description": "[![Deploy to now](https://deploy.now.sh/static/button.svg)](https://deploy.now.sh/?repo=https://github.com/nilsreich/musti)",
+  "name": "lit-html-test",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "webpack": "^4.14.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nilsreich/musti.git"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "http-server dist"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/nilsreich/musti/issues"
+  "dependencies": {
+    "@material/mwc-button": "^0.1.2",
+    "@polymer/lit-element": "^0.5.2",
+    "pwa-helpers": "^0.8.3",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
   },
-  "homepage": "https://github.com/nilsreich/musti#readme"
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^3.2.0",
+    "redux-devtools": "^3.4.1",
+    "webpack": "^4.14.0",
+    "webpack-command": "^0.3.1",
+    "workbox-webpack-plugin": "^3.3.1"
+  }
 }
